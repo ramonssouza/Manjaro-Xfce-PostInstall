@@ -9,7 +9,7 @@
 ## Usage instructions
 Simply clone the repo into your home folder, CD into the repo and run the command using `bash`
 ```console
-foo@bar:~/Manjaro-Xfce-PostInstall$ bash root.sh
+[foo@bar Manjaro-Xfce-PostInstall]$ bash post-install.sh
 ```
 
 ## Credits
