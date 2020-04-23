@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo sudo-post-install.sh
-post-install.sh
+sudo bash sudo-post-install.sh
+bash post-install.sh
