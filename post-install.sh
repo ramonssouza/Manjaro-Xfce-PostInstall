@@ -6,8 +6,8 @@ echo Updating graphics drivers
 sudo mhwd -a pci nonfree 0300
 echo Updating all pacman packages
 sudo pacman -Syu
-echo Installing pacaur, discord, lightdm, lightdm webkit and lightdm settings
-sudo pacman -S --noconfirm pacaur discord lightdm lightdm-webkit2-greeter lightdm-settings
+echo Installing pacaur, discord, lightdm, lightdm webkit, lightdm settings, powerline and powerline fonts
+sudo pacman -S --noconfirm pacaur discord lightdm lightdm-webkit2-greeter lightdm-settings powerline powerline-fonts
 echo Disable lightdm service
 sudo systemctl disable lightdm.service
 echo Re-enable lightdm service
@@ -22,5 +22,6 @@ pacaur -S --noconfirm visual-studio-code-bin lightdm-webkit-theme-aether dotnet-
 
 # FINAL COMMANDS (MUST BE EXECUTED AFTER LIGHTDM THEME INSTALL)
 echo Copying config files
+sudo cp configs/.bashrc ~/.bashrc
 sudo cp configs/lightdm.conf /etc/lightdm/
 sudo cp configs/xorg.conf /etc/X11/
