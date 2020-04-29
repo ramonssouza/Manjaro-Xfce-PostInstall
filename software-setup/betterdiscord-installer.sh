@@ -8,3 +8,5 @@ sudo mv betterdiscordctl /usr/local/bin
 betterdiscordctl install
 
 # Download betterdiscord theme from my gists
+# Plugins go into ~/.config/BetterDiscord/plugins/
+# Themes go into ~/.config/BetterDiscord/themes/
