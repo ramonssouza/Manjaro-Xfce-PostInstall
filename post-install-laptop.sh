@@ -4,8 +4,8 @@ echo Updating Kernel
 sudo mhwd-kernel -i linux56
 echo Updating all pacman packages
 sudo pacman -Syu
-echo Installing pacaur, discord, lightdm, lightdm webkit, lightdm settings, powerline and powerline fonts
-sudo pacman -S --noconfirm pacaur discord lightdm lightdm-webkit2-greeter lightdm-settings powerline powerline-fonts
+echo Installing pacaur, discord, lightdm, lightdm webkit, lightdm settings, powerline, powerline fonts and adapta
+sudo pacman -S --noconfirm pacaur discord lightdm lightdm-webkit2-greeter lightdm-settings powerline powerline-fonts adapta-gtk-theme
 echo Disable lightdm service
 sudo systemctl disable lightdm.service
 echo Re-enable lightdm service
